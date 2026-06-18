@@ -31,7 +31,7 @@ EC2 Instance
 Docker Hub Account (or AWS ECR)
 
 # Clone the Repository
-git clone https://github.com/your-username/jenkins-cicd-pipeline.git
+git clone https://github.com/VarshaRajashekar/Containerized-App-Deployment.git
 cd jenkins-cicd-pipeline
 # Build the Docker Image
 docker build -t sample-app .
