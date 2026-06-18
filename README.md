@@ -2,51 +2,22 @@
 This DevOps project that demonstrates a complete CI/CD pipeline using Jenkins, Docker, GitHub, and AWS EC2. This project automates the process of building, packaging, and deploying a containerized web application, showcasing a real-world software delivery workflow.The pipeline is designed to reduce manual effort by automatically validating code changes, building Docker images, pushing them to a container registry, and deploying the latest version to an AWS EC2 instance.
 
 ## Architecture
-## 🏗️ Architecture
+                                          Developer
+                                              | 
+                                          Github Repo
+                                               |
+                                        Jenkins Pipeline
+                                                |
+                                               / \
+                              Build Docker Image  Valildation Checks
+                                       |
+                              Push Docker Image to repo
+                                        |
+                              Deploy to AWS EC2 Instance
+                                         |
+                                  Running Application 
 
-```text
-+-----------+
-| Developer |
-+-----------+
-      |
-      v
-+-------------------+
-| GitHub Repository |
-+-------------------+
-      |
-      v
-+------------------+
-| Jenkins Pipeline |
-+------------------+
-      |
-      +------------------------+
-      |                        |
-      v                        v
-+----------------+   +---------------------+
-| Build Docker   |   | Validation Checks   |
-| Image          |   | (Testing/Linting)   |
-+----------------+   +---------------------+
-      |
-      v
-+------------------+
-| Push Docker      |
-| Image to Registry|
-+------------------+
-      |
-      v
-+------------------+
-| Deploy to AWS    |
-| EC2 Instance     |
-+------------------+
-      |
-      v
-+------------------+
-| Running          |
-| Application      |
-+------------------+
-
-
-Prerequisites
+Prerequisites                                    
 
 The tools which we use:
 
