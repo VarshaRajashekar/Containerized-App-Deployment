@@ -35,28 +35,22 @@ docker build -t sample-app .
 # Run the Application
 docker run -d -p 80:80 sample-app
 
-Verification Commands
+# Verification Commands
 
 Check Docker Version
-
 docker --version
 
 List Images
-
 docker images
 
 List Running Containers
-
 docker ps
 
 List All Containers
-
 docker ps -a
 
 View Container Logs
-
 docker logs flask-container
 
 Execute Commands Inside the Container
-
 docker exec -it flask-container bash
