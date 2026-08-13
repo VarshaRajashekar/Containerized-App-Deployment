@@ -36,7 +36,6 @@ docker build -t sample-app .
 docker run -d -p 80:80 sample-app
 
 # Verification Commands
-
 Check Docker Version
 docker --version
 
