@@ -1,5 +1,5 @@
 # Containerized-App-Deployment
-This DevOps project that demonstrates a complete CI/CD pipeline using Jenkins, Docker, GitHub, and AWS EC2. This project automates the process of building, packaging, and deploying a containerized web application, showcasing a real-world software delivery workflow. The pipeline is designed to reduce manual effort by automatically validating code changes, building Docker images, pushing them to a container registry, and deploying the latest version to an AWS EC2 instance.
+This DevOps project that demonstrates a complete CI/CD pipeline using Jenkins, Docker, GitHub, and AWS EC2 and explains how it automates the process of building, packaging, and deploying a containerized web application, showcasing a real-world software delivery workflow. The pipeline is designed to reduce manual effort by automatically validating code changes, building Docker images, pushing them to a container registry, and deploying the latest version to an AWS EC2 instance.
 
 ## Architecture
                                           
@@ -36,16 +36,16 @@ docker build -t sample-app .
 docker run -d -p 80:80 sample-app
 
 # Verification Commands
-Check Docker Version
+To check Docker Version
 docker --version
 
-List Images
+to list the Images
 docker images
 
-List Running Containers
+To check the list of Containers running 
 docker ps
 
-List All Containers
+Listing All Containers
 docker ps -a
 
 View Container Logs
